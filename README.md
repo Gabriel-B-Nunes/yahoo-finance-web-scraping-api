@@ -22,4 +22,14 @@ Cria função que retorna as empresas listadas no site.
 1 conecta com o website usando requests;
 2 transforma os dados em um objeto beautifulsoup;
 3 localiza e armazena os nomes e simbolos das empresas;
-4 retorna um arguivo csv OU imprimi na tela.
+4 retorna simbolos, nomes ou ambos.
+
+### Objetivo do Sprint 2
+
+Cria função que consulta uma empresa específicada por simbolo
+
+### Backlog do Sprint 2
+1 conecta com o website usando requests e o simbolo da empresa;
+2 transforma os dados em um objeto beautifulsoup;
+3 localiza e armazena as legendas e valores;
+4 retorna os valores OU cria arquivo csv.
