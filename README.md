@@ -6,10 +6,10 @@ O objetivo deste produto é ser uma API capaz de extrair os dados das empresas n
 
 ## Backlog do produto
 
-Como um user, eu gostaria de saber quais empresas estão listadas;
-Como um user, eu gostaria de poder escolher qual empresa consultar;
-Como um user, eu gostaria de consultar todas as empresas;
-Como um user, eu gostaria de consultar todos os dados de todas as empresas.
+* Como um user, eu gostaria de saber quais empresas estão listadas;
+* Como um user, eu gostaria de poder escolher qual empresa consultar;
+* Como um user, eu gostaria de consultar todas as empresas;
+* Como um user, eu gostaria de consultar todos os dados de todas as empresas.
 
 ### Objetivo do Sprint 1
 
