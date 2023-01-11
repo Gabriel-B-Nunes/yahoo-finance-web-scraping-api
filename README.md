@@ -9,9 +9,6 @@ O objetivo deste produto é ser uma API capaz de extrair os dados das empresas n
 Como um user, eu gostaria de saber quais empresas estão listadas;
 Como um user, eu gostaria de poder escolher qual empresa consultar;
 Como um user, eu gostaria de consultar todas as empresas;
-
-Como um user, eu gostaria de saber quais dados estão listados;
-Como um user, eu gostaria de poder escolher quais dados da empresa extrair;
 Como um user, eu gostaria de consultar todos os dados de todas as empresas.
 
 ### Objetivo do Sprint 1
@@ -33,3 +30,12 @@ Cria função que consulta uma empresa específicada por simbolo
 2 transforma os dados em um objeto beautifulsoup;
 3 localiza e armazena as legendas e valores;
 4 retorna os valores OU cria arquivo csv.
+
+### Objetivo do Sprint 3
+
+Cria função que consulta todas as empresas e retorna os valores OU cria arquivo csv.
+
+### Backlog do Sprint 3
+1 usa a função lista_empresas para obter todos os simbolos;
+2 usa a função pesquisa em loop para cada simbolo em simbolos;
+3 retorna todos os resultados em um dicionário OU cria arquivo csv.

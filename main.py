@@ -57,7 +57,7 @@ def lista_empresas(retorna):
 #funcao pesquisa uma empresa
 def pesquisa(simbolo, return_csv=False):
     soup = conecta_empresa(simbolo)
-    valores = list()
+    valores = [[simbolo]]
 
     for items in soup.find_all(id='quote-summary'):
         for item in items.select('tr'):
@@ -84,3 +84,24 @@ def pesquisa(simbolo, return_csv=False):
 
             writer.writerow(head)
             writer.writerow(valores)
+
+#funcao pesquisa todas as empresas
+def pesquisa_todas(return_csv=False):
+    simbolos = lista_empresas('simbolo')
+
+    if return_csv == True:
+        head = ['Previous Close', 'Open', 'Bid', 'Ask', "Day's Range", '52 Week Range', 'Volume', 'Avg. Volume', 'Market Cap', 'Beta (5Y Monthly)', 'PE Ratio (TTM)', 'EPS (TTM)', 'Earnings Date', 'Forward Dividend & Yield', 'Ex-Dividend Date', '1y Target Est']
+        open_csv = open('data.csv', 'w')
+        writer = csv.writer(open_csv)
+        writer.writerow(head)
+
+        for simbolo in simbolos:
+            temp = pesquisa(simbolo)
+            writer.writerow(temp)
+
+        open_csv.close()
+    elif return_csv == False:
+        data = dict()
+        for simbolo in simbolos:
+            data[simbolo] = pesquisa(simbolo)
+        return(data)
